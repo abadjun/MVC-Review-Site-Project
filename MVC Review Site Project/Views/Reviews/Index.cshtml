@@ -29,7 +29,7 @@
 
 
 
-@*<p>
+<p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
@@ -41,11 +41,11 @@
             @Html.DisplayNameFor(model => model.Name)
         </th>
         <th>
+            @Html.DisplayNameFor(model => model.Rating)
+        </th>
             @Html.DisplayNameFor(model => model.PublishDate)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Rating)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Description)
         </th>
@@ -77,4 +77,4 @@
     </tr>
 }
 
-</table>*@
+</table>
