@@ -1,6 +1,18 @@
-﻿body {
+﻿
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:burlywood;
+    font-size:18px;
+
+}
+h3{
+    font-size:24px;
+    font-style:italic;
+}
+h4{
+    font-size:28px;
+    align-content:center;
 }
 
 /* Set padding to keep content from hitting the edges */
