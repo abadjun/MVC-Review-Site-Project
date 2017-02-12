@@ -9,7 +9,7 @@ namespace MVC_Review_Site_Project.Models
     public class Category
     {
         [Key]
-        public int CategoryID { get; set; }
+        public int CategoryID { get; set; } //category ID
         public string Name { get; set; }
         public virtual ICollection<Review> Reviews { get; set; }
 

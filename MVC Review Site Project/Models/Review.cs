@@ -18,7 +18,7 @@ namespace MVC_Review_Site_Project.Models
         public string Description { get; set; }
 
 
-        [ForeignKey("Category")] 
+        [ForeignKey("Category")] // calls ID for categoryID
         public int CategoryID { get; set; }
         public virtual Category Category { get; set; }
     }

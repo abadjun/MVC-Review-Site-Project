@@ -9,6 +9,8 @@
 <div class="row">
     @foreach (var item in Model)
     {
+        
+
         <div class="col-md-4">
             <div class="thumbnail">
                 <div class="caption">
@@ -16,20 +18,20 @@
                     <h3>@Html.DisplayFor(modelItem => item.Category.Name)</h3>
                     <p>@Html.DisplayFor(modelItem => item.Name)</p>
                     <p><span class="label label-default">@Html.DisplayFor(modelItem => item.PublishDate)</span>&nbsp;<strong>@Html.DisplayNameFor(model => model.PublishDate)</strong></p>
-                    <p>@Html.ActionLink("Rating", "Rating", new { id = item.ID }, new { @class = "btn-Secondary", role = "button" })</p>
+                    <p>@Html.DisplayFor(modelItem => item.Rating)</p>
                     <p>@Html.DisplayNameFor(model => model.Description)</p>
                     @*@<p><a href="#" class="btn btn-primary" role="button">Details</a></p>*@
                     @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn-primary", role = "button" })
+                    
                 </div>
             </div>
         </div>
     }
 </div>
 
-<footer>© 2001-2017 Number 1 Travel LLC. All rights reserved. The number one travel review site.</footer>
 
 
-<p>
+@*@<p>
     @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
@@ -77,4 +79,4 @@
     </tr>
 }
 
-</table>
+</table>*@
