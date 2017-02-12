@@ -187,6 +187,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Images\2843137-80x80_1236877835_avatars_funny_dancing_banana.gif" />
+    <Content Include="Images\globe.jpg" />
+    <Content Include="Images\New York.jpg" />
+    <Content Include="Images\Random img.JPG" />
+    <Content Include="Images\world image.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
