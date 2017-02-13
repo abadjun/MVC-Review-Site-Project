@@ -13,7 +13,6 @@
     @foreach (var item in Model)
     {
 
-
         <div class="col-md-4">
             <div class="thumbnail">
                 <div class="caption">
@@ -23,7 +22,6 @@
                     <p><span class="label label-default">@Html.DisplayFor(modelItem => item.PublishDate)</span>&nbsp;<strong>@Html.DisplayNameFor(model => model.PublishDate)</strong></p>
                     <p>@Html.DisplayFor(modelItem => item.Rating)</p>
                     <p>@Html.DisplayNameFor(model => model.Description)</p>
-                    @*@<p><a href="#" class="btn btn-primary" role="button">Details</a></p>*@
                     @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn-primary", role = "button" })
                     
                 </div>
