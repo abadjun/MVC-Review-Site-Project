@@ -3,27 +3,35 @@
 @{
     ViewBag.Title = "Index";
 }
+@*Main Header with images*@
 
+<div class="page-header">
+    <h1 class="container"><img id="logoImg" img src="~/Images/number1-24.png" /><img id="logoImg2" img src="~/Images/travel image.jpg"/></h1>
+</div>
 <h3>Reviews</h3>
-
 <div class="img-3">
     <img src="~/Images/2843137-80x80_1236877835_avatars_funny_dancing_banana.gif" />
 </div> 
 <div class="row">
     @foreach (var item in Model)
     {
+        @*Main Section*@
 
         <div class="col-md-4">
             <div class="thumbnail">
                 <div class="caption">
                     <h5>LOCATION:</h5>
                     <h3>@Html.DisplayFor(modelItem => item.Category.Name)</h3>
-                    <p>@Html.DisplayFor(modelItem => item.Name)</p>
+                    <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
                     <p><span class="label label-default">@Html.DisplayFor(modelItem => item.PublishDate)</span>&nbsp;<strong>@Html.DisplayNameFor(model => model.PublishDate)</strong></p>
                     <p>@Html.DisplayFor(modelItem => item.Rating)</p>
                     <p>@Html.DisplayNameFor(model => model.Description)</p>
                     @Html.ActionLink("Details", "Details", new { id = item.ID }, new { @class = "btn-primary", role = "button" })
                     
+                    @*Wasn't sure if we needed these kept or how to make privete*@
+
+                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
                 </div>
             </div>
         </div>
@@ -32,52 +40,4 @@
 
 
 
-@*@<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Rating)
-        </th>
-            @Html.DisplayNameFor(model => model.PublishDate)
-        </th>
-        <th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th></th>
-    </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PublishDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Rating)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
-        </td>
-    </tr>
-}
-
-</table>*@

@@ -1,13 +1,26 @@
-﻿.navbar-inverse{
+﻿/*Navbar*/
+.navbar-inverse{
     background-color:aqua;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:medium;
     text-align:center;
+    padding-left:0px;
     
 }
-.navbar-collapse{
-    color:hotpink;
+/* Official Logo*/
+#logoImg{
+    text-align:center;
+    align-items:center   
 }
+h1.container{
+    background-color:#E8D6CF;
+    align-content:center;
+    image-rendering:crisp-edges;
+}
+button-primary{
+     border:1px solid #FFF6F0;
+}
+
 /*Added body styling*/
 body {
     padding-top: 50px;
@@ -17,32 +30,41 @@ body {
 }
 /*Changed header stylings*/
 h3{
-    font-size:24px;
+    font-size:36px;
     font-style:italic;
     font-weight:bold;
+    font-family:'MS Gothic';
+    background-color:fuchsia;
+}
+h2{
+    font-size:24px;
+    font-family:Utsaah;
 }
 h4{
-    font-size:28px;
+    font-size:36px;
     align-content:center;
     font-weight:bold;
+    color:midnightblue;
 
 }
 /*Made buttons stand out*/
 .btn-primary{
     background-color:aqua;
 }
-
+/*Jumbotron*/
 .jumbotron {
     font-family:'Segoe UI',Vijaya;
     background-color:royalblue;
     font-style:italic;
 }
+/*Footer*/
 .thefooter{
     color:mediumvioletred;
     width:100%;
     font-family:Andalus,cursive;
+    
 }
-}
+
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -54,6 +76,10 @@ h4{
 */
 .dl-horizontal dt {
     white-space: normal;
+    font-family:Aharoni,'Angsana New';
+    color:midnightblue;
+    text-align:center;
+    align-items:center
 }
 
 /* Set width on the form input elements since they're 100% wide by default */

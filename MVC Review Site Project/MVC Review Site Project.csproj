@@ -190,7 +190,9 @@
     <Content Include="Images\2843137-80x80_1236877835_avatars_funny_dancing_banana.gif" />
     <Content Include="Images\globe.jpg" />
     <Content Include="Images\New York.jpg" />
+    <Content Include="Images\number1-24.png" />
     <Content Include="Images\Random img.JPG" />
+    <Content Include="Images\travel image.jpg" />
     <Content Include="Images\world image.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
